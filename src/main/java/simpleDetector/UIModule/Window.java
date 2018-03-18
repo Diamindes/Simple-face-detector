@@ -3,6 +3,7 @@ package simpleDetector.UIModule;
 import java.awt.Color;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import javax.swing.JTextArea;
 import simpleDetector.openCvModule.VideoModule;
 
@@ -376,9 +377,13 @@ public class Window extends javax.swing.JFrame {
                 jButton4.setEnabled(false);
                 
                 jLabel4.setText("Training started!");
+                jTextArea2.setText("");
                 jLabel4.setForeground(new Color(255,150,0));
+                camera.stopVideo();
+                try{ TimeUnit.SECONDS.sleep(1);}catch(Exception e){}
                 camera.train();
                 jLabel4.setText("Training Completed!");
+                
                 jLabel4.setForeground(new Color(0,255,0));
                 
                 jButton1.setEnabled(true);

@@ -15,7 +15,7 @@ import org.opencv.objdetect.CascadeClassifier;
 
 public class Detector{
     private final String front = 
-            "/home/diamind/Programming/Projects/Java/Local/OpenCV/srcOpenCV/front.xml";;
+            "./src/main/resourсes/files/opencv/front.xml";
    
     private final CascadeClassifier frontDetector;
     private final Map<String, Integer> statistic = new HashMap<>(); 

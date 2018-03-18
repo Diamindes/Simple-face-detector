@@ -79,6 +79,8 @@ public class Recognizer{
             BufferedReader in = new BufferedReader(new FileReader(new File(path + "/paths.txt")));
             
             labels = new int[numOfImgs];
+            images.clear();
+            regPersons.clear();
             String line;
             String separator = ";";
             for(int i=0;i<numOfImgs;++i){
@@ -121,7 +123,6 @@ public class Recognizer{
         Imgproc.resize(frame, frame, new Size(200,200));
         
         faceRec.predict( frame, label, conf);
-        System.out.println("----DONE----");
         
         if(regPersons.containsKey(label[0]))
             return regPersons.get(label[0]);
