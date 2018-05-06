@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
 import java.io.File;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -28,10 +29,19 @@ import org.opencv.core.Mat;
 import org.opencv.core.Size;
 import org.opencv.face.EigenFaceRecognizer;
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
+=======
+import java.util.concurrent.TimeUnit;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import org.opencv.core.Mat;
+import org.opencv.core.Size;
+import org.opencv.face.EigenFaceRecognizer;
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 import org.opencv.imgproc.Imgproc;
 import org.opencv.videoio.VideoCapture;
 import simpleDetector.UIModule.Window;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 public class OpenCv implements VideoModule {
 
@@ -161,6 +171,8 @@ public class OpenCv implements VideoModule {
     public void setOuputWindow(JPanel out) {
         outputWindow = out;
 =======
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 
 public class OpenCv implements VideoModule{
     private boolean cumOn = false;
@@ -248,13 +260,20 @@ public class OpenCv implements VideoModule{
     @Override
     public void setOuputVideoWindow(JPanel out) {
        outputWindow = out;
+<<<<<<< HEAD
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
+=======
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
     }
 
     @Override
     public void train() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         detector.train();
+=======
+        recognizer.configure(coreGUI.getRecognizerLog());
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
         recognizer.configure(coreGUI.getRecognizerLog());
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29

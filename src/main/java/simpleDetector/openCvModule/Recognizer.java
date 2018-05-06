@@ -16,6 +16,7 @@ import javax.swing.JTextArea;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfInt;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.opencv.core.MatOfRect;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
@@ -139,6 +140,8 @@ public class Recognizer {
             }
 
 =======
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 import org.opencv.core.Size;
 import org.opencv.face.FaceRecognizer;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -227,6 +230,9 @@ public class Recognizer{
             for(String person : regPersons.values())
                 log.append(i++ + ") " + person + "\n");
             
+<<<<<<< HEAD
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
+=======
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Recognizer.class.getName()).log(Level.SEVERE, null, ex);
@@ -235,6 +241,7 @@ public class Recognizer{
             Logger.getLogger(Recognizer.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("Input error!");
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     }
@@ -298,6 +305,8 @@ public class Recognizer{
     }*/
 }
 =======
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
         
         
     }
@@ -318,5 +327,9 @@ public class Recognizer{
             return "Annonimus!";
     }
     
+<<<<<<< HEAD
+}
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
+=======
 }
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29

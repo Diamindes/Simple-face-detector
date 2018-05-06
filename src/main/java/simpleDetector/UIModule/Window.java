@@ -16,7 +16,11 @@ public class Window extends javax.swing.JFrame {
         setView();
         this.camera = camera;
 <<<<<<< HEAD
+<<<<<<< HEAD
         camera.configure(this, jTextArea4, jTextArea1, jTextArea2);
+=======
+        camera.configure(this, jTextArea1, jTextArea4);
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
         camera.configure(this, jTextArea1, jTextArea4);
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
@@ -65,7 +69,10 @@ public class Window extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
 <<<<<<< HEAD
+<<<<<<< HEAD
         jLabel8 = new javax.swing.JLabel();
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 
@@ -109,6 +116,10 @@ public class Window extends javax.swing.JFrame {
 
         jButton1.setText("Start");
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        jButton1.setEnabled(false);
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
         jButton1.setEnabled(false);
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
@@ -266,8 +277,11 @@ public class Window extends javax.swing.JFrame {
         jLabel5.setText("User name");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         jLabel8.setText("countOfPhotos");
 
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -294,9 +308,13 @@ public class Window extends javax.swing.JFrame {
                                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
 <<<<<<< HEAD
+<<<<<<< HEAD
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)))
+=======
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
@@ -314,10 +332,14 @@ public class Window extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< HEAD
+<<<<<<< HEAD
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel8)))
+=======
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
@@ -368,24 +390,34 @@ public class Window extends javax.swing.JFrame {
                 jLabel7.setText("User data creating");
                 jLabel7.setForeground(new Color(255,150,0));
 <<<<<<< HEAD
+<<<<<<< HEAD
                 camera.setOuputWindow(jPanel2);
                 Executors.newSingleThreadExecutor().execute(new Runnable() {
                     @Override
                     public void run() {
                         camera.startVideo();
 =======
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
                 camera.setOuputVideoWindow(jPanel2);
                 Executors.newSingleThreadExecutor().execute(new Runnable() {
                     @Override
                     public void run() {
                         camera.startVideo(false);
+<<<<<<< HEAD
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
+=======
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
                     }
                 });
                 
                 Executors.newSingleThreadExecutor().execute( ()->{
 <<<<<<< HEAD
+<<<<<<< HEAD
                         camera.addUser(jTextField1.getText(), jLabel8);
+=======
+                        camera.makePhoto(jTextField1.getText(), 40);
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
                         camera.makePhoto(jTextField1.getText(), 40);
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
@@ -444,7 +476,11 @@ public class Window extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 <<<<<<< HEAD
+<<<<<<< HEAD
         camera.setOuputWindow(jPanel3);
+=======
+        camera.setOuputVideoWindow(jPanel3);
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
         camera.setOuputVideoWindow(jPanel3);
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
@@ -454,7 +490,11 @@ public class Window extends javax.swing.JFrame {
         ExecutorService exec = Executors.newSingleThreadExecutor();
         exec.execute(() -> {
 <<<<<<< HEAD
+<<<<<<< HEAD
             camera.startVideo();
+=======
+            camera.startVideo(true);
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
             camera.startVideo(true);
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
@@ -478,7 +518,10 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel8;
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 =======
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
     private javax.swing.JPanel jPanel1;

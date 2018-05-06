@@ -2,6 +2,7 @@ package simpleDetector.openCvModule;
 
 import java.time.LocalDateTime;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -18,10 +19,17 @@ import java.util.Map;
 import javax.swing.JTextArea;
 import org.opencv.core.Mat;
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
+=======
+import java.util.HashMap;
+import java.util.Map;
+import javax.swing.JTextArea;
+import org.opencv.core.Mat;
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 import org.opencv.core.MatOfRect;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import org.opencv.core.Size;
 import org.opencv.core.Rect2d;
@@ -182,6 +190,8 @@ public class Detector {
 
     }
 =======
+=======
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
@@ -268,5 +278,8 @@ public class Detector{
                 
                 Imgcodecs.imwrite(outputPhotoPath, face); 
      }
+<<<<<<< HEAD
+>>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
+=======
 >>>>>>> dcc377ea1d0adc6afec258daad8837c435476e29
 }
