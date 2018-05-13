@@ -7,9 +7,14 @@ import org.opencv.core.Rect;
 
 public class Contours {
 
-    public int acc = 100;
-    public int lives = 10;
+    private  int acc ;
+    private int lives ;
     private int number = 1;
+
+    public Contours(int acc, int lives) {
+        this.acc = acc;
+        this.lives = lives;
+    }
 
     Set<Contour> objects = new HashSet<>();
 
